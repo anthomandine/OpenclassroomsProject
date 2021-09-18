@@ -1,9 +1,12 @@
+
 html body
 {
+	max-width: 100%;
 	width: 1200px;
 	inline-size: max-content;
-	margin-left: 50px;
-	font-family: Raleway,sans-serif;
+	margin-left: 10px;
+	font-family: 'Raleway', sans-serif;
+	overflow: auto;
 }
 
 /* ---------------------
@@ -21,17 +24,34 @@ nav ul
 {
 	list-style: none;
     display: flex;
+    align-items: center;
+    margin-left: -30px;
 }
 
-nav li
+.nav1
 {
-	margin: 0px 0px 0px 40px;
+	flex: 3;
 }
 
-header
+.nav2
 {
-	display: flex;
-	justify-content: space-between;
+	flex: 1;
+}
+
+.nav3
+{
+	flex: 1;
+}
+
+.nav4
+{
+	flex: 1;
+}
+
+nav a:hover 
+{
+	border-top: solid #0065FC 1px;
+	padding-top: 10px;
 }
 
 /* ---------------------
@@ -51,13 +71,22 @@ figure
 {
 	border: solid white;
 	border-radius: 20px;
+    box-shadow: 0px 0px 10px grey;
+    transition: all 0.5s;
 }
 
 figure img
 {
-	height: 100px;
-	width: 220px;
-	border-radius: 20px;
+	height: 120px;
+	width: 250px;
+	border-radius: 20px 20px 0px 0px;
+	object-fit: cover;
+}
+
+figcaption
+{
+	padding-left: 10px;
+	padding-top: 10px;
 }
 
 .largePicture
@@ -86,20 +115,20 @@ figure:hover
 	border: solid #F2F2F2 3px;
     border-radius: 40px 10px 10px 40px;
     background-color: #F2F2F2;
-    padding: 3px 6px 5px 7px;
+    padding: 6px 8px 8px 10px;
 }
 
 #button
 {
 	color: white;
-	background-color: #0065fc;
+	background-color: #0065FC;
 	border-radius: 10px 40px 40px 10px;
 }
 
 #button, input
 {
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 #filters
@@ -110,16 +139,16 @@ figure:hover
 
 #filters i
 {
-	background-color: #a8deec;
-	border: solid #a8deec;
+	background-color: #DEEBFF;
+	border: solid #DEEBFF;
 	border-radius: 40px;
-	color: #2745b0;
+	color: #0065FC;
 	padding: 5px;
 }
 
 #filters p:hover
 {
-	background-color: #a8deec;
+	background-color: #DEEBFF;
 }
 
 #filters p
@@ -129,6 +158,7 @@ figure:hover
     margin-left: 30px;
     inline-size: max-content;
     padding-right: 10px;
+    transition: all 0.5s;
 }
 
 /* ---------------------
@@ -171,7 +201,7 @@ figure:hover
 #thirdSection img
 {
 	width: 110px;
-	height: 100px;
+	height: 110px;
 	float: left;
 }
 
@@ -181,11 +211,19 @@ figure:hover
 	flex-direction: column;
 }
 
+#mostPopular figure img 
+{
+	border-radius: 20px 0px 0px 20px!important;
+	margin-right: 10px;
+	object-fit: cover;
+}
+
 #thirdSection
 {
 	background-color:#f2f2f2;
 	width: max-content;	
     border-radius: 20px;
+
 }
 
 /* ---------------------
@@ -203,6 +241,13 @@ figure:hover
 	display: none;
 }
 
+#secondActivity, #fourthActivity
+{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /* ---------------------
 		footer
 -----------------------*/
@@ -214,3 +259,4 @@ footer
 	justify-content: space-around;
 	margin-top: inherit;
 }
+
