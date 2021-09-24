@@ -2,6 +2,23 @@
 @media all and (max-width: 1024px)
 {
 
+
+	#mostPopular
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	#mostPopular a 
+	{
+		width: 310px;
+	}
+	#accommodation
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
 	.nav4 
 	{
 		position: absolute;
@@ -15,22 +32,10 @@
 		flex-direction: row;
 	}
 
-	#accommodation, #firstMarseilleAccommodation, #secondMarseilleAccommodation 
-	{
-		display: flex;
-		flex-direction: column;
-	}
-
 	#filters
 	{
 		flex-wrap: wrap;
 
-	}
-
-	#accommodation
-	{
-		flex-direction: column-reverse;
-		align-items: center;
 	}
 
 	#secondSection
@@ -42,14 +47,20 @@
 	#thirdSection
 	{
 		margin-right: 30px;
+		display: flex;
+		flex-direction: column;
 	}
 
-	#fourthSection
+	#fourthSection 
 	{
-		flex-direction: column;
-		display: flex;
-		align-items: center;
+		display: block;
+		margin: auto;
 	}
+	#fourthSection img
+	{
+		width: 900px;
+	}
+
 
 	figure img
 	{
@@ -73,12 +84,7 @@
 		margin-left: 10px;
 	}
 
-	#activity
-	{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
+	
 
 	footer
 	{

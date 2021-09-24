@@ -19,12 +19,19 @@
 	{
 		display: flex;
 		flex-direction: row;
+		margin-top: 50px;
 	}
 
 	#accommodation, #firstMarseilleAccommodation, #secondMarseilleAccommodation 
 	{
 		display: flex;
 		flex-direction: column;
+	}
+
+	#mostPopular
+	{
+		display: flex;
+		flex-direction: column!important;
 	}
 
 	#filters
@@ -35,7 +42,7 @@
 
 	#accommodation
 	{
-		flex-direction: column-reverse;
+		flex-direction: column-reverse!important;
 		align-items: center;
 	}
 
@@ -49,6 +56,12 @@
 	{
 		margin-right: 30px;
 	}
+	#thirdSection img
+{
+	width: 110px!important;
+	height: 110px!important;
+	float: left!important;
+}
 
 	#fourthSection
 	{
@@ -59,7 +72,7 @@
 
 	figure img
 	{
-		width: 300px;
+		width: 300px!important;
 	}
 
 	.largePicture

@@ -36,6 +36,13 @@ header
     justify-content: space-between;
     margin-right: 80px;
 }
+
+header a 
+{
+	color: black;
+	text-decoration: none!important;
+}
+
 nav ul
 {
 	list-style: none;
@@ -50,9 +57,10 @@ nav ul
 	margin-left: 60px;
 }
 
-.nav2:hover, .nav3:hover 
+.nav2, .nav3 
 {
 	border-top: solid #0065FC 2px;
+
 }
 
 /* ---------------------
