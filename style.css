@@ -59,9 +59,19 @@ nav ul
 
 .nav2, .nav3 
 {
-	border-top: solid #0065FC 2px;
-
+	border-top: solid black 2px;
 }
+
+.nav2:active, .nav3:active
+{
+	border-top: solid #0065FC 2px;
+} 
+
+.nav2 a:hover, .nav3 a:hover
+{
+	color: #0065FC!important;
+	border-top: solid #0065FC 2px;
+} 
 
 /* ---------------------
 		main 
