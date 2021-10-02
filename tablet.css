@@ -1,5 +1,4 @@
-
-@media all and (max-width: 1024px)
+@media all and (min-widht: 767px), (max-width: 1024px)  
 {
 
 
@@ -19,12 +18,12 @@
 		flex-direction: column;
 	}
 
-	.nav4 
+	/*.nav4 
 	{
 		position: absolute;
 		top: 23px;
 		left: 230px;
-	}
+	}*/
 
 	nav ul
 	{

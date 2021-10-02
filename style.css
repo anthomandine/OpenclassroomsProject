@@ -52,10 +52,19 @@ nav ul
     flex-direction: row;
 }
 
-.nav2, .nav3, .nav4
+				.nav4 
+					{
+						right: 0;
+				    position: absolute;
+				    top: 0px;
+				    padding-right: 20px;
+				    padding-top: 20px;
+					}
+
+/*.nav2, .nav3, .nav4
 {
 	margin-left: 60px;
-}
+}*/
 
 .nav2, .nav3 
 {

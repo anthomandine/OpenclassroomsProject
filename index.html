@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style2.css">
 		<link rel="shortcut icon" type="image/png" href="assets/logo/Reservia@3x.png" />
-		<link rel="stylesheet" href="mobile.css"/>
-		<link rel="stylesheet" href="tablet.css"/>
+		<!--<link rel="stylesheet" href="tablet.css"/>-->
+		<link rel="stylesheet" href="style2mobile.css"/>
 		<title>Reservia</title>
 	</head>
 	
@@ -19,8 +19,8 @@
 					<li class="nav2"><a href="#accommodation">Hébergement</a></li>
 					<li class="nav3"><a href="#activity">Activités</a></li>
 				</ul>
-				<a class="nav4" href="inscrire.html">S'inscrire</a>
 			</nav>
+			<a class="nav4" href="inscrire.html">S'inscrire</a>
 		</header>
 
 		<main>
@@ -29,8 +29,10 @@
 				<p>En plein centre ville ou en pleine nature</p>
 				<div id="searchBar">
 					<label><i class="fas fa-map-marker-alt"></i></label>
-					<input type="search" name="rechercher" placeholder="marseille,france">
+					<input id="search" type="search" name="rechercher" placeholder="marseille,france">
 					<input id="button" type="submit" name="rechercher" value="rechercher">
+					<button id="buttonMobile" type="submit"><i class="fas fa-search"></i></button> 
+
 				</div>
 				<h3><b>Filtres</b></h3>
 				<div id="filters">
@@ -136,7 +138,7 @@
 							<figure>
 								<img src="assets/hebergements/hebergement7.jpg" alt="Hôtel le Soleil du Matin" title="Hôtel le Soleil du Matin">
 								<figcaption>
-									Hôtel le Soleil du Matin<br>Nuit à partir de <br>128€<br>
+									Hôtel le Soleil du Matin<br>Nuit à partir de 128€<br>
 									<p><i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
@@ -162,7 +164,7 @@
 							<figure>
 								<img src="assets/hebergements/hebergement9.jpg" alt="Hôtel Tout bleu et Blanc" title="Hôtel Tout bleu et Blanc">
 								<figcaption>
-									Hôtel Tout bleu et Blanc<br>Nuit à partir de <br>68€<br>
+									Hôtel Tout bleu et Blanc<br>Nuit à partir de 68€<br>
 									<p><i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>

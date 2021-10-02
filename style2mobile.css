@@ -1,0 +1,177 @@
+@media all and (max-width: 768px)
+{
+
+	
+
+	/* ---------------------
+			header
+	-----------------------*/
+
+	header img
+	{
+		width: 90px;
+		height: 40px;
+		padding: 0px;
+		left: 0px;
+		top: 0px;
+	}
+
+	nav ul
+	{
+		display: flex;
+		justify-content: space-evenly;
+		list-style: none;
+	}
+
+	header .nav4 
+	{
+		top: 0px;
+		right: 0px;
+		position: absolute;
+		padding-top: 20px;
+		padding-right: 20px;
+	}
+
+	
+
+	/* ---------------------
+		main # firstSection
+	-----------------------*/
+
+	#filters
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#filters i
+	{
+		background-color: #DEEBFF;
+		border: solid #DEEBFF 12px;
+		border-radius: 40px;
+		color: #0065FC;
+	}
+
+	#filters p
+	{
+		border: solid #F2F2F2;
+	    border-radius: 50px;
+	    transition: all 0.5s;
+	    margin-right: 50px;
+	}
+
+	/* ---------------------
+			  main 
+	-----------------------*/
+
+	figure img
+	{
+		height: 130px;
+		width: 300px;
+		border-radius: 20px 20px 0px 0px;
+		object-fit: cover;
+	}
+
+	figure
+	{
+		border: solid white;
+		border-radius: 20px;
+	    box-shadow: 0px 0px 10px grey;
+	    transition: all 0.5s;
+	}
+
+	article a
+	{
+		text-decoration: none;
+		color: black;
+	}
+
+	#secondSection figcaption, #activity figcaption
+	{
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+
+	#firstMarseilleAccommodation, #secondMarseilleAccommodation
+	{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	#accommodationTitle, #fourthSection h2
+	{
+		display: none;
+	}
+
+	#accommodation
+	{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	#accommodation i
+	{
+		color: #0065fc;
+	}
+
+	#fourthSection
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	#thirdSection img
+	{
+		width: 110px;
+		height: 100px;
+		float: left;
+	}
+
+	#thirdSection
+	{
+		background-color:#f2f2f2;
+	}
+
+	#chartLine 
+	{
+		color: black!important;
+		float: right;
+	}
+
+	#mostPopular figure img 
+	{
+		border-radius: 20px 0px 0px 20px!important;
+		object-fit: cover;
+	}
+
+	.largePicture
+{
+	height: 130px;
+}
+
+	/* ---------------------
+			footer
+	-----------------------*/
+
+	footer
+	{
+		background-color: #F2F2F2;
+	    display: flex;
+	    flex-direction: column;
+	}
+
+	footer ul 
+	{
+		list-style: none;
+	}
+
+	footer li 
+	{
+		margin-top: 10px;
+	}
+}
