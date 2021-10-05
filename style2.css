@@ -13,34 +13,27 @@ html body
 			header	
 -----------------------*/
 
+header
+{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
 header img
 {
 	width: 90px;
 	height: 40px;
-	top: 0px;
-	left: 0px;
-	position: relative;
-	padding-top: 10px;
-	padding-left: 20px;
 }
 
 nav ul
 {
-	display: flex;
-	justify-content: space-evenly;
 	list-style: none;
 }
-
-header .nav4 
-{
-	top: 0px;
-	right: 0px;
-	position: absolute;
-	padding-top: 20px;
-	padding-right: 20px;
-}
-
-a:-webkit-any-link
+a
 {
 	text-decoration: none;
 	color: black;

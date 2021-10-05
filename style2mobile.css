@@ -1,3 +1,10 @@
+@media all and (max-width: 1399px)
+{
+	#thirdSection, #secondSection 
+	{
+    	width: 100%!important;
+	}
+	
 @media all and (max-width: 768px)
 {
 
@@ -8,30 +15,40 @@
 	-----------------------*/
 
 	header img
+{
+	top: 0px;
+	left: 0px;
+	position: relative;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+nav ul
+{
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+}
+
+header .nav4 
+{
+	top: 0px;
+	right: 0px;
+	position: absolute;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+	/*#buttonMobile
 	{
-		width: 90px;
-		height: 40px;
-		padding: 0px;
-		left: 0px;
-		top: 0px;
+		display: block;
 	}
 
-	nav ul
+	#button
 	{
-		display: flex;
-		justify-content: space-evenly;
-		list-style: none;
+		display: none;
 	}
-
-	header .nav4 
-	{
-		top: 0px;
-		right: 0px;
-		position: absolute;
-		padding-top: 20px;
-		padding-right: 20px;
-	}
-
+*/
 	
 
 	/* ---------------------
