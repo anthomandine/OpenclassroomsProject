@@ -2,8 +2,9 @@
 {
 	#thirdSection, #secondSection 
 	{
-    	width: 100%!important;
+    	width: 100%;
 	}
+}
 	
 @media all and (max-width: 768px)
 {
@@ -14,42 +15,60 @@
 			header
 	-----------------------*/
 
-	header img
-{
-	top: 0px;
-	left: 0px;
-	position: relative;
-	padding-top: 10px;
-	padding-left: 20px;
-}
+	.desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: block;
+    }
+    
+    #headerMobile {
+       display: flex;
+       justify-content: space-between;
+       align-items: center
+    }
+    
+    #menuMobile {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .detailMenuMobile {
+        flex-grow: 1;
+        text-align: center;
+        border-bottom: solid grey 2px;
+        padding-top: 10px;
+    }
+    
+    #navCurrentMobile {
+        border-bottom: solid #0065FC 2px;
+        padding-bottom: 20px;
+    }
 
-nav ul
-{
-	display: flex;
-	justify-content: space-evenly;
-	list-style: none;
-}
-
-header .nav4 
-{
-	top: 0px;
-	right: 0px;
-	position: absolute;
-	padding-top: 20px;
-	padding-right: 20px;
-}
-
-	/*#buttonMobile
-	{
-		display: block;
-	}
+    #navCurrentMobileColor
+    {
+        color: #0065FC;
+    }
 
 	#button
 	{
 		display: none;
 	}
-*/
-	
+
+	#buttonMobile
+	{
+		display: block;
+		background-color: #0065FC;
+	    color: white;
+	    padding: 11px;
+	    border-radius: 11px;
+	    position: absolute;
+	    left: 184px;
+    	top: 0;
+	}
 
 	/* ---------------------
 		main # firstSection
@@ -167,9 +186,9 @@ header .nav4
 	}
 
 	.largePicture
-{
-	height: 130px;
-}
+	{
+		height: 130px;
+	}
 
 	/* ---------------------
 			footer

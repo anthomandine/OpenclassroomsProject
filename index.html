@@ -4,24 +4,49 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-		<link rel="stylesheet" type="text/css" href="style2.css">
-		<link rel="shortcut icon" type="image/png" href="assets/logo/Reservia@3x.png" />
+		<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+		<link rel="stylesheet" href="assets/style/stylemobile.css"/>
 		<!--<link rel="stylesheet" href="tablet.css"/>-->
-		<link rel="stylesheet" href="style2mobile.css"/>
+
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo/favicon_package_v0.16/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo/favicon_package_v0.16/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo/favicon_package_v0.16/favicon-16x16.png">
+		<link rel="mask-icon" href="assets/images/logo/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+
 		<title>Reservia</title>
 	</head>
-	
 	<body>
 		<header>
-			<img src="assets/logo/Reservia@3x.png" alt="logo">
-			<nav>
-				<ul>
-					<li class="nav2"><a href="#accommodation">Hébergement</a></li>
-					<li class="nav3"><a href="#activity">Activités</a></li>
-				</ul>
-			</nav>
-			<a class="nav4" href="inscrire.html">S'inscrire</a>
-		</header>
+            
+            <div class="desktop">
+                <div id="headerDesktop">
+                    <img id="logoDesktop" src="assets/images/logo/Reservia@3x.png" alt="logo">
+                    <a id="subscribeDesktop" href="inscrire.html">S'inscrire</a>
+                </div>
+                <nav>
+                    <ul id="menuDesktop">
+                        <li class="detailMenuDesktop" id="navCurrentDesktop"><a id="navCurrentDesktopColor" href="#accommodation">Hébergement</a></li>
+                        <li class="detailMenuDesktop"><a href="#activity">Activités</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="mobile">
+                <div id="headerMobile">
+                    <img id="logoMobile" src="assets/images/logo/Reservia@3x.png" alt="logo">
+                    <a id="subscribeMobile" href="inscrire.html">S'inscrire</a>
+                </div>
+                <nav>
+                    <ul id="menuMobile">
+                        <li class="detailMenuMobile" id="navCurrentMobile"><a id="navCurrentMobileColor" href="#accommodation">Hébergement</a></li>
+                        <li class="detailMenuMobile"><a href="#activity">Activités</a></li>
+                    </ul>
+                </nav>
+            </div>
+		
+        </header>
 
 		<main>
 			<section id="firstSection">
@@ -32,7 +57,6 @@
 					<input id="search" type="search" name="rechercher" placeholder="marseille,france">
 					<input id="button" type="submit" name="rechercher" value="rechercher">
 					<button id="buttonMobile" type="submit"><i class="fas fa-search"></i></button> 
-
 				</div>
 				<h3><b>Filtres</b></h3>
 				<div id="filters">
@@ -50,7 +74,7 @@
 					<div id="firstMarseilleAccommodation">
 						<a href="">
 							<figure>
-								<img src="assets/hebergements/hebergement1.jpg" alt="Auberge la Cannebière" title="Auberge la Cannebière">
+								<img src="assets/images/hebergements/hebergement1.jpg" alt="Auberge la Cannebière" title="Auberge la Cannebière">
 								<figcaption>
 									Auberge la Cannebière<br>Nuit à partir de 46€<br>
 									<i class="fas fa-star"></i>
@@ -63,7 +87,7 @@
 						</a>
 						<a href="">
 							<figure>
-								<img src="assets/hebergements/hebergement2.jpg" alt="Hôtel du Port" title="Hôtel du Port">
+								<img src="assets/images/hebergements/hebergement2.jpg" alt="Hôtel du Port" title="Hôtel du Port">
 								<figcaption>
 									Hôtel du Port<br>Nuit à partir de 52€<br>
 									<i class="fas fa-star"></i>
@@ -76,7 +100,7 @@
 						</a>
 						<a href="">
 							<figure>
-								<img src="assets/hebergements/hebergement3.jpg" alt="Hôtel Les Mouettes" title="Hôtel Les Mouettes">
+								<img src="assets/images/hebergements/hebergement3.jpg" alt="Hôtel Les Mouettes" title="Hôtel Les Mouettes">
 								<figcaption>
 									Hôtel Les Mouettes<br>Nuit à partir de 76€<br>
 									<i class="fas fa-star"></i>
@@ -91,7 +115,7 @@
 					<div id="secondMarseilleAccommodation">
 						<a href="">
 							<figure>
-								<img src="assets/hebergements/hebergement4.jpg" alt="Hôtel de la Mer" title="Hôtel de la Mer">
+								<img src="assets/images/hebergements/hebergement4.jpg" alt="Hôtel de la Mer" title="Hôtel de la Mer">
 								<figcaption>
 									Hôtel de la Mer<br>Nuit à partir de 46€<br>
 									<i class="fas fa-star"></i>
@@ -104,7 +128,7 @@
 						</a>
 						<a href="">
 							<figure>
-								<img src="assets/hebergements/hebergement5.jpg" alt="Auberge le Panier" title="Auberge le Panier">
+								<img src="assets/images/hebergements/hebergement5.jpg" alt="Auberge le Panier" title="Auberge le Panier">
 								<figcaption>
 									Auberge le Panier<br>Nuit à partir de 23€<br>
 									<i class="fas fa-star"></i>
@@ -117,7 +141,7 @@
 						</a>
 						<a href="">
 							<figure>
-								<img src="assets/hebergements/hebergement6.jpg" alt="Hôtel Chez Amina" title="Hôtel Chez Amina">
+								<img src="assets/images/hebergements/hebergement6.jpg" alt="Hôtel Chez Amina" title="Hôtel Chez Amina">
 								<figcaption>
 									Hôtel Chez Amina<br>Nuit à partir de 96€<br>
 									<i class="fas fa-star"></i>
@@ -136,7 +160,7 @@
 					<div id="mostPopular">
 						<a href="">
 							<figure>
-								<img src="assets/hebergements/hebergement7.jpg" alt="Hôtel le Soleil du Matin" title="Hôtel le Soleil du Matin">
+								<img src="assets/images/hebergements/hebergement7.jpg" alt="Hôtel le Soleil du Matin" title="Hôtel le Soleil du Matin">
 								<figcaption>
 									Hôtel le Soleil du Matin<br>Nuit à partir de 128€<br>
 									<p><i class="fas fa-star"></i>
@@ -149,7 +173,7 @@
 						</a>
 						<a href="">
 							<figure>
-								<img src="assets/hebergements/hebergement8.jpg" alt="Au Coeur de l'eau Chambres d'hôtes" title="Au Coeur de l'eau Chambres d'hôtes">
+								<img src="assets/images/hebergements/hebergement8.jpg" alt="Au Coeur de l'eau Chambres d'hôtes" title="Au Coeur de l'eau Chambres d'hôtes">
 								<figcaption>
 									Au Coeur de l'eau Chambres d'hôtes<br>Nuit à partir de 71€<br>
 									<p><i class="fas fa-star"></i>
@@ -162,7 +186,7 @@
 						</a>
 						<a href="">
 							<figure>
-								<img src="assets/hebergements/hebergement9.jpg" alt="Hôtel Tout bleu et Blanc" title="Hôtel Tout bleu et Blanc">
+								<img src="assets/images/hebergements/hebergement9.jpg" alt="Hôtel Tout bleu et Blanc" title="Hôtel Tout bleu et Blanc">
 								<figcaption>
 									Hôtel Tout bleu et Blanc<br>Nuit à partir de 68€<br>
 									<p><i class="fas fa-star"></i>
@@ -183,7 +207,7 @@
 					<div id="firstActivity">
 						<a href="">
 							<figure>
-								<img class="largePicture" src="assets/activites/activite1.jpg" alt="Vieux port" title="Vieux port">
+								<img class="largePicture" src="assets/images/activites/activite1.jpg" alt="Vieux port" title="Vieux port">
 								<figcaption>
 									Vieux port
 								</figcaption>
@@ -193,7 +217,7 @@
 					<div id="secondActivity">
 						<a href="">
 							<figure>
-								<img src="assets/activites/activite2.jpg" alt="Fort de Pomègues" title="Fort de Pomègues">
+								<img src="assets/images/activites/activite2.jpg" alt="Fort de Pomègues" title="Fort de Pomègues">
 								<figcaption>
 									Fort de Pomègues
 								</figcaption>
@@ -201,7 +225,7 @@
 						</a>
 						<a href="">
 							<figure>
-								<img src="assets/activites/activite3.jpg" alt="Iles du Frioul" title="Iles du Frioul">
+								<img src="assets/images/activites/activite3.jpg" alt="Iles du Frioul" title="Iles du Frioul">
 								<figcaption>
 									Iles du Frioul
 								</figcaption>
@@ -211,7 +235,7 @@
 					<div id="thirdActivity">
 						<a href="">
 							<figure>
-								<img class="largePicture" src="assets/activites/activite4.jpg" alt="Parc National des Calanques" title="Parc National des Calanques">
+								<img class="largePicture" src="assets/images/activites/activite4.jpg" alt="Parc National des Calanques" title="Parc National des Calanques">
 								<figcaption>
 									Parc National des Calanques
 								</figcaption>
@@ -221,7 +245,7 @@
 					<div id="fourthActivity">
 						<a href="">
 							<figure>
-								<img src="assets/activites/activite5.jpg" alt="Notre-Dame-de-la-Garde" title="Notre-Dame-de-la-Garde">
+								<img src="assets/images/activites/activite5.jpg" alt="Notre-Dame-de-la-Garde" title="Notre-Dame-de-la-Garde">
 								<figcaption>
 									Notre-Dame-de-la-Garde
 								</figcaption>
@@ -229,7 +253,7 @@
 						</a>
 						<a href="">
 							<figure>
-								<img src="assets/activites/activite6.jpg" alt="Parc Longchamp" title="Parc Longchamp">
+								<img src="assets/images/activites/activite6.jpg" alt="Parc Longchamp" title="Parc Longchamp">
 								<figcaption>
 									Parc Longchamp
 								</figcaption>

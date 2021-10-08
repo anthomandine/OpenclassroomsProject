@@ -1,7 +1,7 @@
 @font-face 
 {
     font-family: 'Raleway';
-    src: url('assets/font/Raleway/Raleway-VariableFont_wght.ttf');
+    src: url('font/Raleway/Raleway-VariableFont_wght.ttf');
 }
 
 html body
@@ -13,52 +13,83 @@ html body
 			header	
 -----------------------*/
 
-header
+body a
 {
-	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-
+    text-decoration: none;
+    color: black;
 }
 
-header img
+#navCurrentDesktopColor
 {
-	width: 90px;
-	height: 40px;
+    color: #0065FC;
 }
 
-nav ul
+.desktop 
 {
-	list-style: none;
-}
-a
-{
-	text-decoration: none;
-	color: black;
+    display: block;
 }
 
-.nav2 a:hover, .nav3 a:hover
+.mobile 
 {
-	color: #0065FC;
-	border-top: solid #0065FC 2px;
-} 
+    display: none;
+}
 
-#searchBar i 
+#logoDesktop 
+{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#subscribeDesktop 
+{
+    margin-top: 20px;
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+}
+
+#menuDesktop 
+{
+    position: absolute;
+    top: 0;
+    list-style-type: none;
+    padding: 0;
+    right:70px;
+    margin-top: 28px;
+}
+
+.detailMenuDesktop 
+{
+    display: inline;
+    text-align: center;
+    margin-right: 40px;
+}
+
+#navCurrentDesktop 
+{
+    border-top: solid #0065FC 2px;
+    padding-top: 26px;
+}
+
+.fa-map-marker-alt
 {
 	border: solid #F2F2F2 3px;
     border-radius: 10px 0px 0px 10px;
     background-color: #F2F2F2;
-    padding: 7px 8px 8px 10px;
+    padding: 11px 8px 8px 10px;
     position: absolute;
-    left: 16px;
+    left: 5px;
 }
 
 #search
 {
 	position: relative;
 	left: 40px;
+}
+
+#searchBar
+{
+	position: relative;
 }
 
 #button
@@ -72,8 +103,8 @@ a
 
 #button, input
 {
-	padding-top: 8px;
-	padding-bottom: 8px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	border: solid #F2F2F2 3px;
 }
 
