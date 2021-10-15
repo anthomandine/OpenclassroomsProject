@@ -37,7 +37,7 @@ body a
 #logoDesktop 
 {
     padding-top: 10px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 #subscribeDesktop 
@@ -46,6 +46,8 @@ body a
     margin-right: 10px;
     position: absolute;
     right: 0;
+    color: #0065FC;
+    font-weight: bold;
 }
 
 #menuDesktop 
@@ -134,9 +136,11 @@ body a
 #filters p
 {
 	border: solid #F2F2F2;
-    border-radius: 50px;
+    border-radius: 30px;
     transition: all 0.5s;
     margin-right: 50px;
+    font-weight: bold;
+    padding-right: 5px;
 }
 
 #filters p:hover
@@ -173,6 +177,11 @@ article a
 {
 	text-decoration: none;
 	color: black;
+}
+
+#firstSection 
+{
+	margin: 20px;
 }
 
 #secondSection figcaption, #activity figcaption
@@ -228,7 +237,6 @@ article a
 	border-radius: 30px;
 	display: flex;
     flex-direction: column;
-    justify-content: center;
     margin: 5px 5px 5px 5px;
 }
 
@@ -236,6 +244,11 @@ article a
 {
 	color: black!important;
 	float: right;
+}
+
+#mostPopular figure
+{
+	margin-bottom: 40px;
 }
 
 #mostPopular figure img 

@@ -2,7 +2,8 @@
 {
 	#thirdSection, #secondSection 
 	{
-    	width: 100%;
+    	width: max-content;
+    	margin: auto;
 	}
 }
 	
@@ -23,10 +24,12 @@
         display: block;
     }
     
-    #headerMobile {
+    #headerMobile 
+    {
        display: flex;
        justify-content: space-between;
-       align-items: center
+       align-items: center;
+       margin: 20px;
     }
     
     #menuMobile {
@@ -128,6 +131,11 @@
 		padding-top: 10px;
 	}
 
+	#secondSection
+	{
+		background-color: #fff;
+	}
+
 	#firstMarseilleAccommodation, #secondMarseilleAccommodation
 	{
 		display: flex;
@@ -171,6 +179,13 @@
 	#thirdSection
 	{
 		background-color:#f2f2f2;
+		width: 100%;
+		border-radius: 0;
+	}
+
+	#thirdSection figcaption
+	{
+		height: 100px;
 	}
 
 	#chartLine 
