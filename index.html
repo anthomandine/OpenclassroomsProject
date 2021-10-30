@@ -23,11 +23,11 @@
             <div class="desktop">
                 <div id="headerDesktop">
                     <img id="logoDesktop" src="assets/images/logo/Reservia@3x.png" alt="logo">
-                    <a id="subscribeDesktop" href="inscrire.html">S'inscrire</a>
+                    <a class="subscribe" href="inscrire.html">S'inscrire</a>
                 </div>
                 <nav>
                     <ul id="menuDesktop">
-                        <li class="detailMenuDesktop" id="navCurrentDesktop"><a id="navCurrentDesktopColor" href="#accommodation">Hébergement</a></li>
+                        <li class="detailMenuDesktop" id="navCurrentDesktop"><a id="navCurrentDesktopColor" href="#accommodation">Hébergements</a></li>
                         <li class="detailMenuDesktop"><a href="#activity">Activités</a></li>
                     </ul>
                 </nav>
@@ -36,7 +36,7 @@
             <div class="mobile">
                 <div id="headerMobile">
                     <img id="logoMobile" src="assets/images/logo/Reservia@3x.png" alt="logo">
-                    <a id="subscribeMobile" href="inscrire.html">S'inscrire</a>
+                    <a class="subscribe" href="inscrire.html">S'inscrire</a>
                 </div>
                 <nav>
                     <ul id="menuMobile">
@@ -58,8 +58,9 @@
 					<input id="button" type="submit" name="rechercher" value="Rechercher">
 					<button id="buttonMobile" type="submit"><i class="fas fa-search"></i></button> 
 				</div>
-				<h3><b>Filtres</b></h3>
+				
 				<div id="filters">
+					<h3><b>Filtres</b></h3>
 					<p><i class="fas fa-money-bill-wave"></i>Economique</p>						
 					<p><i class="fas fa-child"></i>Familial</p>						
 					<p><i class="fas fa-heart"></i>Romantique</p>						
@@ -71,7 +72,7 @@
 				<h2 id="accommodationTitle">accommodation</h2>
 				<section id="secondSection">
 					<h2>Hébergements à Marseille</h2>
-					<div id="firstMarseilleAccommodation">
+					<div class="accommodation">
 						<a href="">
 							<figure>
 								<img src="assets/images/hebergements/hebergement1.jpg" alt="Auberge la Cannebière" title="Auberge la Cannebière">
@@ -112,7 +113,7 @@
 							</figure>
 						</a>
 					</div>
-					<div id="secondMarseilleAccommodation">
+					<div class="accommodation">
 						<a href="">
 							<figure>
 								<img src="assets/images/hebergements/hebergement4.jpg" alt="Hôtel de la Mer" title="Hôtel de la Mer">
@@ -153,7 +154,7 @@
 							</figure>
 						</a>
 					</div>
-					<p><a href="Afficher_plus.html">Afficher plus</a></p>
+					<p id="more"><a href="Afficher_plus.html">Afficher plus</a></p>
 				</section>
 				<section id="thirdSection">
 					<h2>Les plus populaires<i id="chartLine" class="fas fa-chart-line"></i></h2>
@@ -162,12 +163,15 @@
 							<figure>
 								<img src="assets/images/hebergements/hebergement7.jpg" alt="Hôtel le Soleil du Matin" title="Hôtel le Soleil du Matin">
 								<figcaption>
-									Hôtel le Soleil du Matin<br>Nuit à partir de 128€<br>
-									<p class="star"><i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i></p>
+									<p>Hôtel le Soleil du<br> Matin</p>
+									<p>Nuit à partir de 128€</p>
+									<p class="star">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</p>
 								</figcaption>
 							</figure>
 						</a>
@@ -175,12 +179,14 @@
 							<figure>
 								<img src="assets/images/hebergements/hebergement8.jpg" alt="Au Coeur de l'eau Chambres d'hôtes" title="Au Coeur de l'eau Chambres d'hôtes">
 								<figcaption>
-									Au Coeur de l'eau Chambres d'hôtes<br>Nuit à partir de 71€<br>
-									<p><i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="far fa-star"></i></p>
+									<p>Au Coeur de l'eau<br> Chambres d'hôtes</p><p>Nuit à partir de 71€</p>
+									<p class="star">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="far fa-star"></i>
+									</p>
 								</figcaption>
 							</figure>
 						</a>
@@ -188,12 +194,14 @@
 							<figure>
 								<img src="assets/images/hebergements/hebergement9.jpg" alt="Hôtel Tout bleu et Blanc" title="Hôtel Tout bleu et Blanc">
 								<figcaption>
-									Hôtel Tout bleu et Blanc<br>Nuit à partir de 68€<br>
-									<p><i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="far fa-star"></i></p>
+									<p>Hôtel Tout bleu et<br> Blanc</p><p>Nuit à partir de 68€</p>
+									<p class="star">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="far fa-star"></i>
+									</p>
 								</figcaption>
 							</figure>
 						</a>

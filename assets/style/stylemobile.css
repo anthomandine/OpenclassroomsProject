@@ -1,24 +1,38 @@
-@media all and (max-width: 1399px)
-{
-	 #secondSection 
-	{
-    	width: max-content;
-    	margin: auto;
+@media all and (max-width: 1399px){
+
+	#mostPopular{
+		display: flex;
+    	flex-direction: row;
+    	flex-wrap: wrap;
+    	justify-content: center;
+    	border-radius: 0;
 	}
 
-	#thirdSection
-	{
-		width: 100%;
+	#secondSection{
+		background-color: white;
+	}
+
+	#thirdSection,
+	#secondSection{
+		margin: auto;
+	}
+
+	#fourthSection{
+		display: flex;
+    	flex-direction: row;
+    	flex-wrap: wrap;
+    	justify-content: space-evenly;
 	}
 }
-	
-@media all and (max-width: 700px)
-{
 
-	
+@media all and (max-width: 600px){
+
+	body{
+		min-width: 320px;
+	}
 
 	/* ---------------------
-			header
+		header
 	-----------------------*/
 
 	.desktop {
@@ -28,15 +42,14 @@
     .mobile {
         display: block;
     }
-    
-    #headerMobile 
-    {
+
+    #headerMobile {
        display: flex;
        justify-content: space-between;
        align-items: center;
-       margin: 20px;
+       margin: 0px 15px 0px 15px;
     }
-    
+
     #menuMobile {
         display: flex;
         flex-direction: row;
@@ -49,25 +62,26 @@
         text-align: center;
         border-bottom: solid grey 2px;
         padding-top: 10px;
-    }
-    
-    #navCurrentMobile {
-        border-bottom: solid #0065FC 2px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
-    #navCurrentMobileColor
-    {
+    #navCurrentMobile {
+        border-bottom: solid #0065FC 2px;
+   	}
+
+   	#navCurrentMobileColor{
         color: #0065FC;
     }
 
-	#button
-	{
+    /* ---------------------
+		main first section
+	-----------------------*/
+
+    #button{
 		display: none;
 	}
 
-	#buttonMobile
-	{
+	#buttonMobile{
 		display: block;
 		background-color: #0065FC;
 	    color: white;
@@ -78,156 +92,91 @@
     	top: 0;
 	}
 
-	/* ---------------------
-		main # firstSection
-	-----------------------*/
-
-	#filters
-	{
+	#filters{
+		position: relative;
 		display: flex;
-		flex-wrap: wrap;
-	}
-
-	#filters i
-	{
-		background-color: #DEEBFF;
-		border: solid #DEEBFF 12px;
-		border-radius: 40px;
-		color: #0065FC;
-	}
-
-	#filters p
-	{
-		border: solid #F2F2F2;
-	    border-radius: 50px;
-	    transition: all 0.5s;
-	    margin-right: 50px;
+    	flex-direction: column;
+    	align-items: flex-start;
+    	padding-left: 10px;
 	}
 
 	/* ---------------------
-			  main 
+		main accomodation 
 	-----------------------*/
 
-	figure img
-	{
-		height: 130px;
-		width: 300px;
-		border-radius: 20px 20px 0px 0px;
-		object-fit: cover;
+	main h2 {
+    	margin-left: 0px;
+    	text-align: center;
 	}
 
-	figure
-	{
-		border: solid white;
-		border-radius: 20px;
-	    box-shadow: 0px 0px 10px grey;
-	    transition: all 0.5s;
+	#accommodation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column-reverse;
 	}
 
-	article a
-	{
-		text-decoration: none;
-		color: black;
+	#mostPopular{
+		display: flex;
+    	flex-direction: column;
+    	flex-wrap: wrap;
 	}
 
-	#secondSection figcaption, #activity figcaption
-	{
-		padding-left: 10px;
-		padding-top: 10px;
+	 #secondSection,
+	 #thirdSection{
+    	margin: auto;
 	}
 
-	#secondSection
-	{
-		background-color: #fff;
+	#secondSection{
+		background-color: white;
 	}
 
-	#firstMarseilleAccommodation, #secondMarseilleAccommodation
-	{
+	 #thirdSection{
+	 	border-radius: 0;
+	 	width: 87%;
+	 }
+
+	 /* ---------------------
+		main activity
+	-----------------------*/
+
+	#fourthSection{
 		display: flex;
 		flex-direction: column;
-		flex-wrap: wrap;
-	}
-
-	#accommodationTitle, #fourthSection h2
-	{
-		display: none;
-	}
-
-	#accommodation
-	{
-		display: flex;
-		flex-direction: column-reverse;
-		align-items: center;
-		flex-wrap: wrap;
-	}
-
-	#accommodation i
-	{
-		color: #0065fc;
-	}
-
-	#fourthSection
-	{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		flex-wrap: wrap;
-	}
-
-	#thirdSection img
-	{
-		width: 110px;
-		height: 100px;
-		float: left;
-	}
-
-	#thirdSection
-	{
-		background-color:#f2f2f2;
-		width: 100%;
-		border-radius: 0;
-	}
-
-	#thirdSection figcaption
-	{
-		height: 100px;
-	}
-
-	#chartLine 
-	{
-		color: black!important;
-		float: right;
-	}
-
-	#mostPopular figure img 
-	{
-		border-radius: 20px 0px 0px 20px!important;
-		object-fit: cover;
-	}
-
-	.largePicture
-	{
-		height: 130px;
+		justify-content: center;
 	}
 
 	/* ---------------------
-			footer
+		footer
 	-----------------------*/
 
-	footer
-	{
+	footer{
 		background-color: #F2F2F2;
 	    display: flex;
 	    flex-direction: column;
 	}
 
-	footer ul 
-	{
+	footer ul {
 		list-style: none;
 	}
 
-	footer li 
-	{
+	footer li {
 		margin-top: 10px;
+	}
+
+}
+
+@media all and (max-width: 370px){
+
+	#mostPopular figcaption {
+		display: block;
+	}
+
+	#mostPopular figure{
+		height: 160px;
+	}
+
+	#mostPopular figure img{
+		height: 160px;
 	}
 }
